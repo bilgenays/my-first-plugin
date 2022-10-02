@@ -109,8 +109,8 @@ function wp_button(){
 ?>
 <link rel="stylesheet" href="<?php echo $eklenti_yolu. "assets/style.css"; ?>">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<!-- Açılan whatsapp yönlendirme sayfasında plugin içerisine girilen bilgileri çağırıyoruz, aynı zamanda whatsapp butonuna hover yaparken sol altta görünen bağlantı adresinde de bu bilgiler yer alıyor -->
-<a href="https://wa.me/?text=Telefon:<?php echo $postmeta_phone ?> Merhaba <?php echo $postmeta_ad ?>!" target="_blank" class="wp-button">
+<!-- Açılan whatsapp yönlendirme sayfasında eklediğimiz plugin içerisine girilen bilgileri çağırıyoruz, aynı zamanda whatsapp butonuna hover yaparken sol altta görünen bağlantı adresinde de bu bilgiler yer alıyor -->
+<a href="https://wa.me/<?php echo $postmeta_phone ?>?text=Merhaba <?php echo $postmeta_ad ?>! Size web siteniz üzerinden ulaştım. Bilgi almak istiyorum." target="_blank" class="wp-button">
     <i class="fa fa-whatsapp"> </i>
 </a>
 <?php
